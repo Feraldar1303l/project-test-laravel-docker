@@ -37,11 +37,13 @@ services:
       - app-network
 
   random-http:
-    image: httpd:alpine
+    image: caddy:alpine
     profiles:
       - random
     ports:
       - "8080:80"
+    volumes:
+      - ./random-http:/usr/share/caddy 
     networks:
       - app-network
 

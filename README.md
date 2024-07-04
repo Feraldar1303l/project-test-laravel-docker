@@ -55,3 +55,14 @@ docker-compose logs
 Para logs más detallados de un servicio específico:
 
 docker-compose logs <nombre-del-servicio>
+
+-------------------------------------------------
+
+## Uso del servicio HTTP aleatorio
+
+Para iniciar el servicio HTTP aleatorio:
+
+```bash
+docker-compose --profile random up -d
+
+-------------------------------------------------
